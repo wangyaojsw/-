@@ -1,0 +1,8 @@
+.title {
+  position: relative;
+  z-index: 1000;
+  color: #177BE6;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}

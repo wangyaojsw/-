@@ -1,0 +1,53 @@
+<ul class="filter-type">
+  <li [class.active]="this.CompanyIntroductionActive" (click)="this.CompanyIntroduntionClick()">公司简介</li>
+  <li [class.active]="this.CompanySizeActive" (click)="this.CompanySizeClick()">公司概况</li>
+</ul>
+<div *ngIf="this.CompanySizeActive">
+  <div class="course">
+    <div class="status_title">注册资本</div>
+    <ul class="prepare-lessonCnt">
+      <li class="data-count">
+        <span>6000万</span>
+        <span>6600万</span>
+        <span>1亿</span>
+      </li>
+      <li class="status">
+        <span>2015.12.31</span>
+        <span>2017.12.31</span>
+        <span>2017.12.31</span>
+      </li>
+    </ul>
+  </div>
+  <div class="course">
+    <div class="status_title">资产管理规模</div>
+    <ul class="evaluation-lessonCnt">
+      <li class="data-count">
+        <span>7330.23亿</span>
+        <span>7424.45亿</span>
+        <span>7946.88亿</span>
+      </li>
+      <li class="status">
+        <span>2015.12.31</span>
+        <span>2017.12.31</span>
+        <span>2017.12.31</span>
+      </li>
+    </ul>
+  </div>
+  <div class="course">
+      <div class="status_title">行业排名</div>
+      <ul class="prepare-lessonCnt">
+        <li class="data-count">
+          <span>第1</span>
+          <span>第4</span>
+          <span>第6</span>
+        </li>
+        <li class="status">
+          <span>社保及企业年金</span>
+          <span>专户管理规模</span>
+          <span>公募基金规模</span>
+        </li>
+      </ul>
+    </div>
+    <div class='living-status-left' echarts [options]="shareStructure"></div>
+    <div class='living-status-right' echarts [options]="AssetManagementStructure"></div>
+</div>

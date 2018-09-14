@@ -1,0 +1,76 @@
+.filter-type{
+    font-size: 0;
+  }
+  .filter-type li:hover{
+    cursor: pointer;
+  }
+  .filter-type li{
+    display: inline-block;
+    width:240px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align:center;
+    color:#024f9b;
+    border:solid 1px #075797;
+    background:#0d2343;
+  }
+.filter-type li.active{
+    color:white;
+    background:#0c182d;
+    border:solid 1px #1bb9f9;
+}
+
+.status_title {
+    width: 80px;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    background: url('../../../../assets/img/icon01.png') center no-repeat;
+    color:white;
+    margin-top:20px;
+    position: relative;
+    background-size: contain;
+}
+.course ul{
+    margin-top: -35px;
+    margin-left: 50px;
+}
+.course ul li{
+    text-align: center;
+    
+}
+.data-count span{
+    width: 124px;
+    display: table-cell;
+    font-size: 13px;
+    color:#fff;
+    height: 20px;
+    margin-top: 50px;
+}
+.status{
+    border-top:solid 1px #083761;
+}
+.status span{
+    width: 124px;
+    display: table-cell;
+    line-height: 30px;
+    font-size: 10px;
+    color: #7e9bc6;
+}
+
+.living-status-left{
+    width:50%;
+    left:0;
+    height: 100px;
+    float: left;
+}
+.living-status-right{
+    width:50%;
+    right:0;
+    float: left;
+    height: 100px;
+}
+
+.element {
+    height: 50%;
+}

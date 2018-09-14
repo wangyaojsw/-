@@ -1,0 +1,63 @@
+<ul class="filter-type">
+    <li [class.active]="this.CompanyNativeLabelActive" (click)="this.CompanyNativeLabelClick()">公司标签</li>
+    <li [class.active]="this.CompanyInternationalLabelActive" (click)="this.CompanyInternationalLabelClick()">网络舆情</li>
+    <li [class.active]="this.CompanyFinancialLabelActive" (click)="this.CompanyFinancialLabelClick()">财报分析</li>
+</ul>
+<div *ngIf="this.CompanyNativeLabelActive">
+    <div class="course">
+        <div class="status_title">覆盖行业</div>
+        <ul class="prepare-lessonCnt">
+            <li class="data-count">
+                <span>制造业</span>
+                <span>金融业</span>
+                <span>软件信息技术</span>
+            </li>
+            <li class="data-count">
+                <span>零售</span>
+                <span>房地产</span>
+                <span>交通运输</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="course">
+        <div class="status_title">公司类型</div>
+        <ul class="prepare-lessonCnt">
+            <li class="data-count">
+                <span>平台型</span>
+                <span>精品型</span>
+                <span>远景发展</span>
+            </li>
+            <li class="status">
+                <span></span>
+                <span></span>
+                <span></span>
+            </li>
+        </ul>
+    </div>
+    <div class='living-status-single' echarts [options]="NativeLabel"></div>
+</div>
+
+
+<div *ngIf="this.CompanyInternationalLabelActive">
+    <div class="course">
+        <div class="status_title">企业关键字</div>
+        <ul class="prepare-lessonCnt">
+            <li class="data-count">
+                <span>制造业</span>
+                <span>金融业</span>
+                <span>软件信息技术</span>
+            </li>
+            <li class="data-count">
+                <span>零售</span>
+                <span>房地产</span>
+                <span>交通运输</span>
+            </li>
+        </ul>
+    </div>
+    <div class='living-status-single' echarts [options]="this.InternationalLabel"></div>
+</div>
+
+<div *ngIf="this.CompanyFinancialLabelActive">
+    <div class='living-status-single' echarts [options]="this.FinancialLabel"></div>
+</div>

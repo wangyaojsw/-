@@ -1,0 +1,59 @@
+<ul class="filter-type">
+  <li [class.active]="this.projectManagedLabelActive" (click)="this.projectManagedLabelClick()">管理产品</li>
+  <li [class.active]="this.AllProjectLabelActive" (click)="this.AllProjectLabelClick()">组合概览</li>
+</ul>
+
+<div *ngIf="this.projectManagedLabelActive">
+  <div class="course">
+      <div class="status_title">管理产品</div>
+      <ul class="prepare-lessonCnt">
+          <li class="data-count">
+              <span>恒盛嘉实</span>
+              <span></span>
+              <span>2017.03.08</span>
+          </li>
+          <li class="status">
+              <span>名称</span>
+              <span>初始金额</span>
+              <span>成立日期</span>
+          </li>
+      </ul>
+  </div>
+
+  <div class="course">
+    <div class="status_title">相关信息</div>
+    <ul class="prepare-lessonCnt">
+        <li class="data-count">
+            <span>股票多头</span>
+            <span>相对收益</span>
+            <span>嘉实基金</span>
+        </li>
+        <li class="status">
+            <span>一级策略</span>
+            <span>二级策略</span>
+            <span>管理人</span>
+        </li>
+    </ul>
+</div>
+
+<div class="course">
+    <div class="status_title">所属组合</div>
+    <ul class="prepare-lessonCnt">
+        <li class="data-count">
+            <span>恒盛MOM母组合</span>
+            <span>中大盘均衡</span>
+            <span>嘉实基金</span>
+        </li>
+        <li class="status">
+            <span>所属组合</span>
+            <span>所属类别</span>
+            <span>管理人</span>
+        </li>
+    </ul>
+</div>
+  
+</div>
+
+<div *ngIf="this.AllProjectLabelActive">
+    <div class='living-status-single' echarts [options]="projectManaged"></div>
+</div>

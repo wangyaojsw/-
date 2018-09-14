@@ -1,0 +1,140 @@
+<ul class="filter-type">
+  <li [class.active]="this.assetAllocationActive" (click)="this.assetAllocationClick()">恒盛嘉实资产配置</li>
+  <li [class.active]="this.assetAllocationForItseltActive" (click)="this.assetAllocationItselfClick()">企业自身资产配置</li>
+  <li [class.active]="this.assetAnalyseActive" (click)="this.assetAnalyseClick()">总结分析</li>
+</ul>
+<div *ngIf="this.assetAllocationActive">
+  <div class='living-status-left' echarts [options]="this.assetAllocationPie">
+    <span class="left-top">123</span>
+    <span class="right-top">123</span>
+    <span class="left-bottom">123</span>
+    <span class="right-bottom">123</span>
+  </div>
+  <div class='living-status-right' echarts [options]="this.assetAllocationline">
+    <span class="left-top"></span>
+    <span class="right-top"></span>
+    <span class="left-bottom"></span>
+    <span class="right-bottom"></span>
+  </div>
+  <div class='living-status-right' echarts [options]="this.stockTop10">
+    <span class="left-top"></span>
+    <span class="right-top"></span>
+    <span class="left-bottom"></span>
+    <span class="right-bottom"></span>
+  </div>
+  <div class='living-status-right' echarts [options]="this.IndustryRatio">
+    <span class="left-top"></span>
+    <span class="right-top"></span>
+    <span class="left-bottom"></span>
+    <span class="right-bottom"></span>
+  </div>
+</div>
+
+<div *ngIf="this.assetAnalyseActive">
+  <div class='living-status-left'>
+    <div class="course">
+      <div class="status_title">产品信息</div>
+      <ul class="prepare-lessonCnt">
+        <li class="data-count">
+          <span>恒盛MOM</span>
+          <span>第23</span>
+          <span>嘉实基金</span>
+        </li>
+        <li class="status">
+          <span>所属母组合</span>
+          <span>产品排名</span>
+          <span>管理人</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="status_title">母组合表现</div>
+      <ul class="prepare-lessonCnt">
+        <li class="data-count">
+          <span>2.8%</span>
+          <span>16.3%</span>
+          <span>-0.3</span>
+          <span>-11%</span>
+        </li>
+        <li class="status">
+          <span>收益率</span>
+          <span>年化波动</span>
+          <span>夏普比率</span>
+          <span>最大回撤</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="status_title">子产品表现</div>
+      <ul class="prepare-lessonCnt">
+        <li class="data-count">
+          <span>-4.7%</span>
+          <span>23.8%</span>
+          <span>-0.48</span>
+          <span>-15.8%</span>
+        </li>
+        <li class="status">
+          <span>收益率</span>
+          <span>年化波动</span>
+          <span>夏普比率</span>
+          <span>最大回撤</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="status_title">多因子归因</div>
+      <ul class="prepare-lessonCnt">
+        <li class="data-count">
+          <span>0.45</span>
+          <span>-0.64</span>
+          <span>0.40</span>
+          <span>1.57</span>
+          <span>-0.41</span>
+        </li>
+        <li class="status">
+          <span>宏观择时</span>
+          <span>个股挖掘</span>
+          <span>行业收益</span>
+          <span>风格收益</span>
+          <span>交易项</span>
+        </li>
+      </ul>
+    </div>
+    <span class="left-top">123</span>
+    <span class="right-top">123</span>
+    <span class="left-bottom">123</span>
+    <span class="right-bottom">123</span>
+  </div>
+  <div class='living-status-right'>
+    <div class='child' echarts [options]="this.ModelRadar['T-M']"></div>
+    <div class='child' echarts [options]="this.ModelRadar['H-M']"></div>
+    <div class='child' echarts [options]="this.ModelRadar['C-L']"></div>
+    <div class='child' echarts [options]="this.ModelRadar['F-F']"></div>
+    <span class="left-top"></span>
+    <span class="right-top"></span>
+    <span class="left-bottom"></span>
+    <span class="right-bottom"></span>
+  </div>
+  <div class='living-status-right' echarts [options]="this.Assetattribution[0]">
+    <span class="left-top"></span>
+    <span class="right-top"></span>
+    <span class="left-bottom"></span>
+    <span class="right-bottom"></span>
+  </div>
+  <div class='living-status-right' echarts [options]="this.IndustryRatio">
+    <span class="left-top"></span>
+    <span class="right-top"></span>
+    <span class="left-bottom"></span>
+    <span class="right-bottom"></span>
+  </div>
+</div>
+
+<div *ngIf="this.assetAllocationForItseltActive">
+    <div class='living-status-left' echarts [options]="this.assetAllocationPieItseft"></div>
+    <div class='living-status-right' echarts [options]="this.assetAllocationlineItSelf"></div>
+    <div class='living-status-right' echarts [options]="this.stockTop10ItSelf"></div>
+    <div class='living-status-right' echarts [options]="this.IndustryRatioItSelf"></div>
+</div>

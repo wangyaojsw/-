@@ -1,0 +1,133 @@
+.filter-type{
+    font-size: 0;
+  }
+  .filter-type li:hover{
+    cursor: pointer;
+  }
+  .filter-type li{
+    display: inline-block;
+    width:120px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align:center;
+    color:#024f9b;
+    border:solid 1px #075797;
+    background:#0d2343;
+  }
+.filter-type li.active{
+    color:white;
+    background:#0c182d;
+    border:solid 1px #1bb9f9;
+}
+
+.status_title {
+    width: 80px;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    background: url('../../../../assets/img/icon01.png') center no-repeat;
+    color:white;
+    margin-top:20px;
+    position: relative;
+    background-size: contain;
+}
+.course ul{
+    margin-top: -35px;
+    margin-left: 50px;
+}
+.course ul li{
+    text-align: center;
+    
+}
+.data-count span{
+    width: 124px;
+    display: table-cell;
+    font-size: 13px;
+    color:#fff;
+    height: 20px;
+    margin-top: 50px;
+}
+.status{
+    border-top:solid 1px #083761;
+}
+.status span{
+    width: 124px;
+    display: table-cell;
+    line-height: 30px;
+    font-size: 10px;
+    color: #7e9bc6;
+}
+
+.living-status-left{
+    width:49.5%;
+    left:0;
+    height: 250px;
+    margin: 1px;
+    float: left;
+    background: linear-gradient(to left, #1bb9f9, #1bb9f9) left top no-repeat, 
+                linear-gradient(to bottom, #1bb9f9, #1bb9f9) left top no-repeat, 
+                linear-gradient(to left, #1bb9f9, #1bb9f9) right top no-repeat,
+                linear-gradient(to bottom, #1bb9f9, #1bb9f9) right top no-repeat, 
+                linear-gradient(to left, #1bb9f9, #1bb9f9) left bottom no-repeat,
+                linear-gradient(to bottom, #1bb9f9, #1bb9f9) left bottom no-repeat,
+                linear-gradient(to left, #1bb9f9, #1bb9f9) right bottom no-repeat,
+                linear-gradient(to left, #1bb9f9, #1bb9f9) right bottom no-repeat;
+    background-size: 1px 10px, 10px 1px, 1px 10px, 10px 1px;  
+}
+.living-status-right{
+    width:49.5%;
+    right:0;
+    margin: 1px;
+    float: left;
+    height: 250px;
+    background: linear-gradient(to left, #1bb9f9, #1bb9f9) left top no-repeat, 
+                linear-gradient(to bottom, #1bb9f9, #1bb9f9) left top no-repeat, 
+                linear-gradient(to left, #1bb9f9, #1bb9f9) right top no-repeat,
+                linear-gradient(to bottom, #1bb9f9, #1bb9f9) right top no-repeat, 
+                linear-gradient(to left, #1bb9f9, #1bb9f9) left bottom no-repeat,
+                linear-gradient(to bottom, #1bb9f9, #1bb9f9) left bottom no-repeat,
+                linear-gradient(to left, #1bb9f9, #1bb9f9) right bottom no-repeat,
+                linear-gradient(to left, #1bb9f9, #1bb9f9) right bottom no-repeat;
+    background-size: 1px 10px, 10px 1px, 1px 10px, 10px 1px;
+}
+
+.child {
+    width: 50%;
+    height: 125px;
+    float: left;
+}
+
+.element {
+    height: 50%;
+}
+
+/* 边角 */
+.left-top,.right-top,.left-bottom,.right-bottom{
+    position:absolute;
+    width:13px;
+    height:13px;
+}
+.left-top{
+    left:0;
+    top:0;
+    border-left:solid 2px #045291;
+    border-top:solid 2px #045291;
+}
+.right-top{
+    right:0;
+    top:0;
+    border-right:solid 2px #045291;
+    border-top:solid 2px #045291;
+}
+.left-bottom{
+    left:0;
+    bottom:0;
+    border-left:solid 2px #045291;
+    border-bottom:solid 2px #045291;
+}
+.right-bottom{
+    right:0;
+    bottom:0;
+    border-right:solid 2px #045291;
+    border-bottom:solid 2px #045291;
+}

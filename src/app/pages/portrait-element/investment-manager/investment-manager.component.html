@@ -1,0 +1,101 @@
+<ul class="filter-type" *ngIf="this.totalManagerShow">
+  <li [class.active]="true">投资经理</li>
+</ul>
+<div class="com-screen-content" *ngIf="this.totalManagerShow">
+  <table class="course-table mt30">
+    <thead>
+      <tr>
+        <td>序列</td>
+        <td>姓名</td>
+        <td>学历</td>
+        <td>职位</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td><a (click)="detail()">邵峰</a></td>
+        <td>博士</td>
+        <td>投资经理</td>
+      </tr>
+
+      <tr>
+        <td>02</td>
+        <td>姓名</td>
+        <td>硕士</td>
+        <td>职位</td>
+      </tr>
+
+      <tr>
+        <td>03</td>
+        <td>姓名</td>
+        <td>硕士</td>
+        <td>职位</td>
+      </tr>
+
+      <tr>
+        <td>04</td>
+        <td>姓名</td>
+        <td>硕士</td>
+        <td>职位</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<ul class="filter-type" *ngIf="this.detailshow">
+  <li [class.active]="false" (click)="this.goBack()">投资经理</li>
+  <li [class.active]="true">投资经理明细</li>
+</ul>
+<div *ngIf="this.detailshow">
+  <div class="course">
+    <div class="status_title">策略风格</div>
+    <ul class="prepare-lessonCnt">
+      <li class="data-count">
+        <span>钢铁有色</span>
+        <span>大盘价值</span>
+        <span>自下而上</span>
+        <span>相对收益</span>
+      </li>
+      <li class="status">
+        <span>聚焦行业</span>
+        <span>风格分类</span>
+        <span>选股策略</span>
+        <span>擅长策略</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="course">
+    <div class="status_title">持仓偏好</div>
+    <ul class="prepare-lessonCnt">
+      <li class="data-count">
+        <span>大盘</span>
+        <span>成长</span>
+        <span>均衡</span>
+      </li>
+      <li class="status">
+        <span>规模维度</span>
+        <span>价值成长</span>
+        <span>趋势维度</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="course">
+      <div class="status_title">持仓情况</div>
+      <ul class="prepare-lessonCnt">
+        <li class="data-count">
+          <span>5%</span>
+          <span>30</span>
+          <span>60%</span>
+        </li>
+        <li class="status">
+          <span>年换手率</span>
+          <span>持仓个数</span>
+          <span>前十持仓比例</span>
+        </li>
+      </ul>
+    </div>
+</div>
